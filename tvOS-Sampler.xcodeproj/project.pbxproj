@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73CFA1101C52793100E8B1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA10F1C52793100E8B1FF /* AppDelegate.swift */; };
-		73CFA1121C52793100E8B1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1111C52793100E8B1FF /* ViewController.swift */; };
-		73CFA1151C52793100E8B1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA1131C52793100E8B1FF /* Main.storyboard */; };
 		73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA1161C52793100E8B1FF /* Assets.xcassets */; };
 		73CFA1221C52793100E8B1FF /* tvOS_SamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1211C52793100E8B1FF /* tvOS_SamplerTests.swift */; };
+		73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1471C534CE300E8B1FF /* AppDelegate.swift */; };
+		73CFA14B1C534D2700E8B1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA14A1C534D2700E8B1FF /* Main.storyboard */; };
+		73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,14 +26,14 @@
 
 /* Begin PBXFileReference section */
 		73CFA10C1C52793100E8B1FF /* tvOS-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		73CFA10F1C52793100E8B1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73CFA1111C52793100E8B1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		73CFA1141C52793100E8B1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73CFA1161C52793100E8B1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73CFA1181C52793100E8B1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73CFA11D1C52793100E8B1FF /* tvOS-SamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-SamplerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CFA1211C52793100E8B1FF /* tvOS_SamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_SamplerTests.swift; sourceTree = "<group>"; };
 		73CFA1231C52793100E8B1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73CFA1471C534CE300E8B1FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73CFA14A1C534D2700E8B1FF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +75,8 @@
 		73CFA10E1C52793100E8B1FF /* tvOS-Sampler */ = {
 			isa = PBXGroup;
 			children = (
-				73CFA10F1C52793100E8B1FF /* AppDelegate.swift */,
-				73CFA1111C52793100E8B1FF /* ViewController.swift */,
-				73CFA1131C52793100E8B1FF /* Main.storyboard */,
+				73CFA1431C534CB700E8B1FF /* classes */,
+				73CFA1491C534CFD00E8B1FF /* UI */,
 				73CFA1161C52793100E8B1FF /* Assets.xcassets */,
 				73CFA1181C52793100E8B1FF /* Info.plist */,
 			);
@@ -91,6 +90,47 @@
 				73CFA1231C52793100E8B1FF /* Info.plist */,
 			);
 			path = "tvOS-SamplerTests";
+			sourceTree = "<group>";
+		};
+		73CFA1431C534CB700E8B1FF /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				73CFA1461C534CCB00E8B1FF /* application */,
+				73CFA1451C534CBB00E8B1FF /* viewcontroller */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		73CFA1451C534CBB00E8B1FF /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				73CFA14E1C534EBD00E8B1FF /* top */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		73CFA1461C534CCB00E8B1FF /* application */ = {
+			isa = PBXGroup;
+			children = (
+				73CFA1471C534CE300E8B1FF /* AppDelegate.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		73CFA1491C534CFD00E8B1FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				73CFA14A1C534D2700E8B1FF /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		73CFA14E1C534EBD00E8B1FF /* top */ = {
+			isa = PBXGroup;
+			children = (
+				73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */,
+			);
+			path = top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CFA14B1C534D2700E8B1FF /* Main.storyboard in Resources */,
 				73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */,
-				73CFA1151C52793100E8B1FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73CFA1121C52793100E8B1FF /* ViewController.swift in Sources */,
-				73CFA1101C52793100E8B1FF /* AppDelegate.swift in Sources */,
+				73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */,
+				73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,17 +255,6 @@
 			targetProxy = 73CFA11E1C52793100E8B1FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		73CFA1131C52793100E8B1FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73CFA1141C52793100E8B1FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		73CFA1241C52793100E8B1FF /* Debug */ = {
@@ -378,6 +407,7 @@
 				73CFA1281C52793100E8B1FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73CFA1291C52793100E8B1FF /* Build configuration list for PBXNativeTarget "tvOS-SamplerTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +416,7 @@
 				73CFA12B1C52793100E8B1FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
