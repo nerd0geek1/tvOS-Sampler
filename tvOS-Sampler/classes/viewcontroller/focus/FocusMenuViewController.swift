@@ -13,15 +13,18 @@ class FocusMenuViewController: UITableViewController {
     let items: [[String : AnyObject]] = [
                                             [
                                                 "Title" : "Focusable",
-                                                "Desc"  : "Focus movement among Focusable objects"
+                                                "Desc"  : "Focus movement among Focusable objects",
+                                                "Dest"  : "FocusableViewController"
                                             ],
                                             [
                                                 "Title" : "Focusable and not Focusable",
-                                                "Desc"  : "Focus movement among focusable and not focusable objects"
+                                                "Desc"  : "Focus movement among focusable and not focusable objects",
+                                                "Dest"  : "NotFocusableViewController"
                                             ],
                                             [
                                                 "Title" : "UIFocusGuide",
-                                                "Desc"  : "Focus movement with UIFocusGuide"
+                                                "Desc"  : "Focus movement with UIFocusGuide",
+                                                "Dest"  : "FocusGuideViewController"
                                             ]
                                         ]
 
@@ -48,6 +51,16 @@ class FocusMenuViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
+        let destinationName: String = items[indexPath.row]["Dest"] as! String
+        showSelectedDestination(destinationName)
+    }
 
+    //MARK: - private
+
+    private func showSelectedDestination(destinationName: String) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Focus", bundle: nil)
+        let viewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier(destinationName)
+
+        presentViewController(viewController, animated: true, completion: nil)
     }
 }

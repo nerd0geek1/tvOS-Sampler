@@ -14,6 +14,9 @@
 		73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */; };
 		73CFA1541C534F5000E8B1FF /* FocusMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1531C534F5000E8B1FF /* FocusMenuViewController.swift */; };
 		73CFA1561C53524D00E8B1FF /* Focus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA1551C53524D00E8B1FF /* Focus.storyboard */; };
+		73CFA1581C5359E200E8B1FF /* FocusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1571C5359E200E8B1FF /* FocusableViewController.swift */; };
+		73CFA15A1C535A0100E8B1FF /* FocusGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1591C535A0100E8B1FF /* FocusGuideViewController.swift */; };
+		73CFA15C1C535A1800E8B1FF /* NotFocusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA15B1C535A1800E8B1FF /* NotFocusableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		73CFA1531C534F5000E8B1FF /* FocusMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusMenuViewController.swift; sourceTree = "<group>"; };
 		73CFA1551C53524D00E8B1FF /* Focus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Focus.storyboard; sourceTree = "<group>"; };
+		73CFA1571C5359E200E8B1FF /* FocusableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusableViewController.swift; sourceTree = "<group>"; };
+		73CFA1591C535A0100E8B1FF /* FocusGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusGuideViewController.swift; sourceTree = "<group>"; };
+		73CFA15B1C535A1800E8B1FF /* NotFocusableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotFocusableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				73CFA1531C534F5000E8B1FF /* FocusMenuViewController.swift */,
+				73CFA1571C5359E200E8B1FF /* FocusableViewController.swift */,
+				73CFA15B1C535A1800E8B1FF /* NotFocusableViewController.swift */,
+				73CFA1591C535A0100E8B1FF /* FocusGuideViewController.swift */,
 			);
 			path = focus;
 			sourceTree = "<group>";
@@ -251,6 +260,9 @@
 				73CFA1541C534F5000E8B1FF /* FocusMenuViewController.swift in Sources */,
 				73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */,
 				73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */,
+				73CFA15A1C535A0100E8B1FF /* FocusGuideViewController.swift in Sources */,
+				73CFA15C1C535A1800E8B1FF /* NotFocusableViewController.swift in Sources */,
+				73CFA1581C5359E200E8B1FF /* FocusableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

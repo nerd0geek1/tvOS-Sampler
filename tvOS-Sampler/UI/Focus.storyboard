@@ -4,6 +4,126 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Focusable View Controller-->
+        <scene sceneID="Evp-ZZ-kGg">
+            <objects>
+                <viewController storyboardIdentifier="FocusableViewController" id="p7J-ht-z9R" customClass="FocusableViewController" customModule="tvOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="280-CX-v8C"/>
+                        <viewControllerLayoutGuide type="bottom" id="pZ2-09-XS0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sBW-yl-HS3">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoM-Mq-7OZ">
+                                <rect key="frame" x="270" y="400" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonA"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SX-If-7gb">
+                                <rect key="frame" x="600" y="400" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQh-GG-Uxe">
+                                <rect key="frame" x="270" y="590" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonC"/>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="preferredFocusedView" destination="9SX-If-7gb" id="bYQ-g9-NhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNL-zK-ZoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="812"/>
+        </scene>
+        <!--Not Focusable View Controller-->
+        <scene sceneID="mX8-MM-bzj">
+            <objects>
+                <viewController storyboardIdentifier="NotFocusableViewController" id="Q6U-rU-zGH" customClass="NotFocusableViewController" customModule="tvOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ko2-gb-szg"/>
+                        <viewControllerLayoutGuide type="bottom" id="E1M-Lu-zCO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7hX-9m-T7L">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkK-XI-Sdi">
+                                <rect key="frame" x="270" y="400" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonA"/>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XS0-FY-28H">
+                                <rect key="frame" x="600" y="400" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonD"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ey-UX-Uof">
+                                <rect key="frame" x="270" y="790" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonC"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLr-BM-uJS">
+                                <rect key="frame" x="270" y="597" width="230" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-kn-93w">
+                                <rect key="frame" x="930" y="400" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonB"/>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpt-4f-Nlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="2186"/>
+        </scene>
+        <!--Focus Guide View Controller-->
+        <scene sceneID="tue-2u-Zhf">
+            <objects>
+                <viewController storyboardIdentifier="FocusGuideViewController" id="AKD-04-1MB" customClass="FocusGuideViewController" customModule="tvOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nos-Pt-P8M"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Yc-7c-Itf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="60g-uC-OKU">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fz-Ii-A21">
+                                <rect key="frame" x="270" y="400" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonA"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G9-PM-PT3">
+                                <rect key="frame" x="600" y="400" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sh-ff-eSg">
+                                <rect key="frame" x="270" y="590" width="230" height="90"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="ButtonC"/>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="buttonB" destination="9G9-PM-PT3" id="cIy-1S-tpO"/>
+                        <outlet property="buttonC" destination="0Sh-ff-eSg" id="ELv-tw-ti5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSb-Br-yqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="3561"/>
+        </scene>
         <!--Focus Menu View Controller-->
         <scene sceneID="WVT-5S-lQg">
             <objects>
