@@ -12,6 +12,8 @@
 		73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1471C534CE300E8B1FF /* AppDelegate.swift */; };
 		73CFA14B1C534D2700E8B1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA14A1C534D2700E8B1FF /* Main.storyboard */; };
 		73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */; };
+		73CFA1541C534F5000E8B1FF /* FocusMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1531C534F5000E8B1FF /* FocusMenuViewController.swift */; };
+		73CFA1561C53524D00E8B1FF /* Focus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA1551C53524D00E8B1FF /* Focus.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		73CFA1471C534CE300E8B1FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73CFA14A1C534D2700E8B1FF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		73CFA1531C534F5000E8B1FF /* FocusMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusMenuViewController.swift; sourceTree = "<group>"; };
+		73CFA1551C53524D00E8B1FF /* Focus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Focus.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		73CFA1451C534CBB00E8B1FF /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				73CFA1521C534F3700E8B1FF /* focus */,
 				73CFA14E1C534EBD00E8B1FF /* top */,
 			);
 			path = viewcontroller;
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				73CFA14A1C534D2700E8B1FF /* Main.storyboard */,
+				73CFA1551C53524D00E8B1FF /* Focus.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -131,6 +137,14 @@
 				73CFA14F1C534ECD00E8B1FF /* TopViewController.swift */,
 			);
 			path = top;
+			sourceTree = "<group>";
+		};
+		73CFA1521C534F3700E8B1FF /* focus */ = {
+			isa = PBXGroup;
+			children = (
+				73CFA1531C534F5000E8B1FF /* FocusMenuViewController.swift */,
+			);
+			path = focus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CFA1561C53524D00E8B1FF /* Focus.storyboard in Resources */,
 				73CFA14B1C534D2700E8B1FF /* Main.storyboard in Resources */,
 				73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */,
 			);
@@ -233,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CFA1541C534F5000E8B1FF /* FocusMenuViewController.swift in Sources */,
 				73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */,
 				73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */,
 			);

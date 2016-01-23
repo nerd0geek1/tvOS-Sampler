@@ -10,7 +10,12 @@ import UIKit
 
 class TopViewController: UITableViewController {
 
-    let items: [String] = ["Focus"]
+    let items: [[String : String]] = [
+                                        [
+                                            "Title" : "Focus",
+                                            "Storyboard" : "Focus"
+                                        ]
+                                    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +31,26 @@ class TopViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell")!
-        cell.textLabel?.text = items[indexPath.row]
+        cell.textLabel?.text = items[indexPath.row]["Title"]
 
         return cell
+    }
+
+    //MARK: - UITableViewDelegate
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+        let storyboardName: String = items[indexPath.row]["Storyboard"]!
+        showSelectedMenu(storyboardName)
+    }
+
+    //MARK: - private
+
+    private func showSelectedMenu(storyboardName: String) {
+        let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let viewController: UIViewController = storyboard.instantiateInitialViewController()!
+
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
