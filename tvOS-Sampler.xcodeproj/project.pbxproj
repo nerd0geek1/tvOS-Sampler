@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7351C7C71C53D6210001C42E /* SiriRemoteMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */; };
+		7351C7C91C53D76C0001C42E /* SiriRemote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */; };
 		73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA1161C52793100E8B1FF /* Assets.xcassets */; };
 		73CFA1221C52793100E8B1FF /* tvOS_SamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1211C52793100E8B1FF /* tvOS_SamplerTests.swift */; };
 		73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1471C534CE300E8B1FF /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriRemoteMenuViewController.swift; sourceTree = "<group>"; };
+		7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SiriRemote.storyboard; sourceTree = "<group>"; };
 		73CFA10C1C52793100E8B1FF /* tvOS-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CFA1161C52793100E8B1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73CFA1181C52793100E8B1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7351C7C51C53D6150001C42E /* siriremote */ = {
+			isa = PBXGroup;
+			children = (
+				7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */,
+			);
+			path = siriremote;
+			sourceTree = "<group>";
+		};
 		73CFA1031C52793100E8B1FF = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,7 @@
 		73CFA1451C534CBB00E8B1FF /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				7351C7C51C53D6150001C42E /* siriremote */,
 				73CFA1521C534F3700E8B1FF /* focus */,
 				73CFA14E1C534EBD00E8B1FF /* top */,
 			);
@@ -133,6 +146,7 @@
 			children = (
 				73CFA14A1C534D2700E8B1FF /* Main.storyboard */,
 				73CFA1551C53524D00E8B1FF /* Focus.storyboard */,
+				7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -240,6 +254,7 @@
 				73CFA1561C53524D00E8B1FF /* Focus.storyboard in Resources */,
 				73CFA14B1C534D2700E8B1FF /* Main.storyboard in Resources */,
 				73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */,
+				7351C7C91C53D76C0001C42E /* SiriRemote.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +277,7 @@
 				73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */,
 				73CFA15A1C535A0100E8B1FF /* FocusGuideViewController.swift in Sources */,
 				73CFA15C1C535A1800E8B1FF /* NotFocusableViewController.swift in Sources */,
+				7351C7C71C53D6210001C42E /* SiriRemoteMenuViewController.swift in Sources */,
 				73CFA1581C5359E200E8B1FF /* FocusableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

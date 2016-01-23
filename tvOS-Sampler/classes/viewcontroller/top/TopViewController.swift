@@ -14,6 +14,10 @@ class TopViewController: UITableViewController {
                                         [
                                             "Title" : "Focus",
                                             "Storyboard" : "Focus"
+                                        ],
+                                        [
+                                            "Title" : "Siri Remote",
+                                            "Storyboard" : "SiriRemote"
                                         ]
                                     ]
 
