@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7351C7C71C53D6210001C42E /* SiriRemoteMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */; };
 		7351C7C91C53D76C0001C42E /* SiriRemote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */; };
+		73A977A11C53E30E00E23C48 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A977A01C53E30E00E23C48 /* GameController.framework */; };
+		73A977A41C5451DF00E23C48 /* SiriRemoteMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A977A31C5451DF00E23C48 /* SiriRemoteMotionViewController.swift */; };
+		73A977A71C545F8400E23C48 /* SiriRemoteDPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A977A61C545F8400E23C48 /* SiriRemoteDPadViewController.swift */; };
+		73A977AB1C5482BB00E23C48 /* SiriRemotePressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A977AA1C5482BB00E23C48 /* SiriRemotePressViewController.swift */; };
 		73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CFA1161C52793100E8B1FF /* Assets.xcassets */; };
 		73CFA1221C52793100E8B1FF /* tvOS_SamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1211C52793100E8B1FF /* tvOS_SamplerTests.swift */; };
 		73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CFA1471C534CE300E8B1FF /* AppDelegate.swift */; };
@@ -34,6 +38,10 @@
 /* Begin PBXFileReference section */
 		7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriRemoteMenuViewController.swift; sourceTree = "<group>"; };
 		7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SiriRemote.storyboard; sourceTree = "<group>"; };
+		73A977A01C53E30E00E23C48 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		73A977A31C5451DF00E23C48 /* SiriRemoteMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriRemoteMotionViewController.swift; sourceTree = "<group>"; };
+		73A977A61C545F8400E23C48 /* SiriRemoteDPadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriRemoteDPadViewController.swift; sourceTree = "<group>"; };
+		73A977AA1C5482BB00E23C48 /* SiriRemotePressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriRemotePressViewController.swift; sourceTree = "<group>"; };
 		73CFA10C1C52793100E8B1FF /* tvOS-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CFA1161C52793100E8B1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73CFA1181C52793100E8B1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A977A11C53E30E00E23C48 /* GameController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +81,19 @@
 			isa = PBXGroup;
 			children = (
 				7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */,
+				73A977AA1C5482BB00E23C48 /* SiriRemotePressViewController.swift */,
+				73A977A61C545F8400E23C48 /* SiriRemoteDPadViewController.swift */,
+				73A977A31C5451DF00E23C48 /* SiriRemoteMotionViewController.swift */,
 			);
 			path = siriremote;
+			sourceTree = "<group>";
+		};
+		73A977A51C5453DF00E23C48 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73A977A01C53E30E00E23C48 /* GameController.framework */,
+			);
+			name = frameworks;
 			sourceTree = "<group>";
 		};
 		73CFA1031C52793100E8B1FF = {
@@ -101,6 +121,7 @@
 				73CFA1491C534CFD00E8B1FF /* UI */,
 				73CFA1161C52793100E8B1FF /* Assets.xcassets */,
 				73CFA1181C52793100E8B1FF /* Info.plist */,
+				73A977A51C5453DF00E23C48 /* frameworks */,
 			);
 			path = "tvOS-Sampler";
 			sourceTree = "<group>";
@@ -126,8 +147,8 @@
 		73CFA1451C534CBB00E8B1FF /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
-				7351C7C51C53D6150001C42E /* siriremote */,
 				73CFA1521C534F3700E8B1FF /* focus */,
+				7351C7C51C53D6150001C42E /* siriremote */,
 				73CFA14E1C534EBD00E8B1FF /* top */,
 			);
 			path = viewcontroller;
@@ -273,7 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CFA1541C534F5000E8B1FF /* FocusMenuViewController.swift in Sources */,
+				73A977A71C545F8400E23C48 /* SiriRemoteDPadViewController.swift in Sources */,
 				73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */,
+				73A977AB1C5482BB00E23C48 /* SiriRemotePressViewController.swift in Sources */,
+				73A977A41C5451DF00E23C48 /* SiriRemoteMotionViewController.swift in Sources */,
 				73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */,
 				73CFA15A1C535A0100E8B1FF /* FocusGuideViewController.swift in Sources */,
 				73CFA15C1C535A1800E8B1FF /* NotFocusableViewController.swift in Sources */,

@@ -19,7 +19,133 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UT-FQ-mnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="480"/>
+            <point key="canvasLocation" x="339" y="-739"/>
+        </scene>
+        <!--Siri Remote Motion View Controller-->
+        <scene sceneID="RFV-wj-k00">
+            <objects>
+                <viewController storyboardIdentifier="SiriRemoteMotionViewController" id="E6e-DW-88x" customClass="SiriRemoteMotionViewController" customModule="tvOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WxV-Xh-oxG"/>
+                        <viewControllerLayoutGuide type="bottom" id="66G-ZA-i0H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JFx-hZ-hOo">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userAcceleration.y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRo-if-5YI">
+                                <rect key="frame" x="460" y="280" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userAcceleration.z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-8q-3Rj">
+                                <rect key="frame" x="460" y="360" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gravity.x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anJ-G4-2Kf">
+                                <rect key="frame" x="460" y="500" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gravity.y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBP-DX-Mww">
+                                <rect key="frame" x="460" y="580" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gravity.z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWq-Y1-sA5">
+                                <rect key="frame" x="460" y="660" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userAcceleration.x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSj-4a-Jvl">
+                                <rect key="frame" x="460" y="200" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="gravityXLabel" destination="anJ-G4-2Kf" id="Vf9-iJ-kbe"/>
+                        <outlet property="gravityYLabel" destination="TBP-DX-Mww" id="Eov-Lk-9da"/>
+                        <outlet property="gravityZLabel" destination="jWq-Y1-sA5" id="Hir-49-bSp"/>
+                        <outlet property="userAccelerationXLabel" destination="uSj-4a-Jvl" id="0LL-sH-WsC"/>
+                        <outlet property="userAccelerationYLabel" destination="eRo-if-5YI" id="fQy-vH-dbd"/>
+                        <outlet property="userAccelerationZLabel" destination="ecg-8q-3Rj" id="7n3-fN-zUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EP-qh-J4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515" y="530"/>
+        </scene>
+        <!--Siri Remote Press View Controller-->
+        <scene sceneID="lAg-84-3dC">
+            <objects>
+                <viewController storyboardIdentifier="SiriRemotePressViewController" id="tKU-mP-15u" customClass="SiriRemotePressViewController" customModule="tvOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HTp-V5-OO3"/>
+                        <viewControllerLayoutGuide type="bottom" id="hlI-DC-XM8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sp5-ku-QKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpe-eg-PpT">
+                                <rect key="frame" x="610" y="520" width="700" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="pressTypeLabel" destination="gpe-eg-PpT" id="Drl-TL-iJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJx-hR-Cj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515" y="-2018"/>
+        </scene>
+        <!--Siri RemoteD Pad View Controller-->
+        <scene sceneID="V59-Nd-Qpl">
+            <objects>
+                <viewController storyboardIdentifier="SiriRemoteDPadViewController" id="9eC-HB-rE3" customClass="SiriRemoteDPadViewController" customModule="tvOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ety-SD-5b7"/>
+                        <viewControllerLayoutGuide type="bottom" id="FEz-pu-Bx3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngj-Mn-snk">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5e-fP-q1p">
+                                <rect key="frame" x="460" y="400" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0N-Kw-Gtx">
+                                <rect key="frame" x="460" y="480" width="1000" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="xValueLabel" destination="R5e-fP-q1p" id="1S9-ew-e53"/>
+                        <outlet property="yValueLabel" destination="j0N-Kw-Gtx" id="6G6-fr-u92"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5k4-U6-09m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515" y="-739"/>
         </scene>
     </scenes>
 </document>
