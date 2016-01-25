@@ -26,6 +26,10 @@
 		73EB13E61C558A7B00D29367 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB13E51C558A7B00D29367 /* TVServices.framework */; };
 		73EB13E91C558A7B00D29367 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB13E81C558A7B00D29367 /* ServiceProvider.swift */; };
 		73EB13ED1C558A7B00D29367 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 73EB13E31C558A7B00D29367 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		73EB13FA1C559FC900D29367 /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F81C559FC900D29367 /* blue.jpg */; };
+		73EB13FB1C559FC900D29367 /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F91C559FC900D29367 /* red.jpg */; };
+		73EB13FC1C559FD900D29367 /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F81C559FC900D29367 /* blue.jpg */; };
+		73EB13FD1C559FDB00D29367 /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F91C559FC900D29367 /* red.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,8 @@
 		73EB13E51C558A7B00D29367 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
 		73EB13E81C558A7B00D29367 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		73EB13EA1C558A7B00D29367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73EB13F81C559FC900D29367 /* blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue.jpg; sourceTree = "<group>"; };
+		73EB13F91C559FC900D29367 /* red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				73CFA10E1C52793100E8B1FF /* tvOS-Sampler */,
-				73CFA1201C52793100E8B1FF /* tvOS-SamplerTests */,
 				73EB13E71C558A7B00D29367 /* Extension */,
+				73EB13F71C559FC900D29367 /* Resources */,
+				73CFA1201C52793100E8B1FF /* tvOS-SamplerTests */,
 				73EB13E41C558A7B00D29367 /* Frameworks */,
 				73CFA10D1C52793100E8B1FF /* Products */,
 			);
@@ -247,6 +254,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		73EB13F71C559FC900D29367 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73EB13F81C559FC900D29367 /* blue.jpg */,
+				73EB13F91C559FC900D29367 /* red.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,7 +368,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CFA1561C53524D00E8B1FF /* Focus.storyboard in Resources */,
+				73EB13FA1C559FC900D29367 /* blue.jpg in Resources */,
 				73CFA14B1C534D2700E8B1FF /* Main.storyboard in Resources */,
+				73EB13FB1C559FC900D29367 /* red.jpg in Resources */,
 				73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */,
 				7351C7C91C53D76C0001C42E /* SiriRemote.storyboard in Resources */,
 			);
@@ -369,6 +387,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73EB13FC1C559FD900D29367 /* blue.jpg in Resources */,
+				73EB13FD1C559FDB00D29367 /* red.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,8 +24,24 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
 
     var topShelfItems: [TVContentItem] {
         // Create an array of TVContentItems.
-        return []
+        return sampleShelfItems()
     }
 
-}
+    private func sampleShelfItems() -> [TVContentItem] {
+        guard let contentIdentifier: TVContentIdentifier = TVContentIdentifier(identifier: "foo", container: nil) else { return [] }
+        guard let contentItem: TVContentItem = TVContentItem(contentIdentifier: contentIdentifier) else { return [] }
 
+        contentItem.title = "bar"
+        let mainBundle = NSBundle.mainBundle()
+        guard let imageURL = mainBundle.URLForResource("blue", withExtension: "jpg") else { fatalError("Error determining local image URL.") }
+
+        contentItem.imageURL = imageURL
+        contentItem.displayURL = NSURL(string: "tvossampler://")
+        contentItem.imageShape = .Square
+
+        //Set this if you use Sectioned style
+        contentItem.topShelfItems = [contentItem]
+
+        return [contentItem]
+    }
+}
