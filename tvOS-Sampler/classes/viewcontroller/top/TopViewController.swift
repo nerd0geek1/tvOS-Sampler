@@ -18,6 +18,10 @@ class TopViewController: UITableViewController {
                                         [
                                             "Title" : "Siri Remote",
                                             "Storyboard" : "SiriRemote"
+                                        ],
+                                        [
+                                            "Title" : "Background Modes",
+                                            "Storyboard" : "BackgroundModes"
                                         ]
                                     ]
 

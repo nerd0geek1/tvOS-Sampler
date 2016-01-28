@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27BF0C5D1C59C92A00D26817 /* BackgroundModes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27BF0C5C1C59C92A00D26817 /* BackgroundModes.storyboard */; };
+		27BF0C5F1C59C95F00D26817 /* BackgroundModesMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF0C5E1C59C95F00D26817 /* BackgroundModesMenuViewController.swift */; };
+		27BF0C611C59C97000D26817 /* BackgroundModesAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF0C601C59C97000D26817 /* BackgroundModesAudioViewController.swift */; };
+		27BF0C661C59CB2600D26817 /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27BF0C641C59CB2600D26817 /* blue.jpg */; };
+		27BF0C671C59CB2600D26817 /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27BF0C651C59CB2600D26817 /* red.jpg */; };
+		27BF0C691C59CB4C00D26817 /* SampleAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BF0C681C59CB4C00D26817 /* SampleAudio.mp3 */; };
+		27BF0C6D1C59CF7900D26817 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF0C6C1C59CF7900D26817 /* Player.swift */; };
 		7351C7C71C53D6210001C42E /* SiriRemoteMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */; };
 		7351C7C91C53D76C0001C42E /* SiriRemote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */; };
 		73A977A11C53E30E00E23C48 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A977A01C53E30E00E23C48 /* GameController.framework */; };
@@ -26,10 +33,6 @@
 		73EB13E61C558A7B00D29367 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB13E51C558A7B00D29367 /* TVServices.framework */; };
 		73EB13E91C558A7B00D29367 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB13E81C558A7B00D29367 /* ServiceProvider.swift */; };
 		73EB13ED1C558A7B00D29367 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 73EB13E31C558A7B00D29367 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		73EB13FA1C559FC900D29367 /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F81C559FC900D29367 /* blue.jpg */; };
-		73EB13FB1C559FC900D29367 /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F91C559FC900D29367 /* red.jpg */; };
-		73EB13FC1C559FD900D29367 /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F81C559FC900D29367 /* blue.jpg */; };
-		73EB13FD1C559FDB00D29367 /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EB13F91C559FC900D29367 /* red.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27BF0C5C1C59C92A00D26817 /* BackgroundModes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BackgroundModes.storyboard; sourceTree = "<group>"; };
+		27BF0C5E1C59C95F00D26817 /* BackgroundModesMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundModesMenuViewController.swift; sourceTree = "<group>"; };
+		27BF0C601C59C97000D26817 /* BackgroundModesAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundModesAudioViewController.swift; sourceTree = "<group>"; };
+		27BF0C641C59CB2600D26817 /* blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue.jpg; sourceTree = "<group>"; };
+		27BF0C651C59CB2600D26817 /* red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red.jpg; sourceTree = "<group>"; };
+		27BF0C681C59CB4C00D26817 /* SampleAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SampleAudio.mp3; sourceTree = "<group>"; };
+		27BF0C6C1C59CF7900D26817 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7351C7C61C53D6210001C42E /* SiriRemoteMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriRemoteMenuViewController.swift; sourceTree = "<group>"; };
 		7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SiriRemote.storyboard; sourceTree = "<group>"; };
 		73A977A01C53E30E00E23C48 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -88,8 +98,6 @@
 		73EB13E51C558A7B00D29367 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
 		73EB13E81C558A7B00D29367 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		73EB13EA1C558A7B00D29367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73EB13F81C559FC900D29367 /* blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue.jpg; sourceTree = "<group>"; };
-		73EB13F91C559FC900D29367 /* red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27BF0C591C59C8A300D26817 /* backgroundmodes */ = {
+			isa = PBXGroup;
+			children = (
+				27BF0C5E1C59C95F00D26817 /* BackgroundModesMenuViewController.swift */,
+				27BF0C601C59C97000D26817 /* BackgroundModesAudioViewController.swift */,
+			);
+			path = backgroundmodes;
+			sourceTree = "<group>";
+		};
+		27BF0C621C59CB0500D26817 /* topshelf */ = {
+			isa = PBXGroup;
+			children = (
+				27BF0C641C59CB2600D26817 /* blue.jpg */,
+				27BF0C651C59CB2600D26817 /* red.jpg */,
+			);
+			path = topshelf;
+			sourceTree = "<group>";
+		};
+		27BF0C631C59CB1500D26817 /* backgroundmodes */ = {
+			isa = PBXGroup;
+			children = (
+				27BF0C681C59CB4C00D26817 /* SampleAudio.mp3 */,
+			);
+			path = backgroundmodes;
+			sourceTree = "<group>";
+		};
+		27BF0C6A1C59CF5300D26817 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				27BF0C6C1C59CF7900D26817 /* Player.swift */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		7351C7C51C53D6150001C42E /* siriremote */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +226,7 @@
 		73CFA1431C534CB700E8B1FF /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				27BF0C6A1C59CF5300D26817 /* audio */,
 				73CFA1461C534CCB00E8B1FF /* application */,
 				73CFA1451C534CBB00E8B1FF /* viewcontroller */,
 			);
@@ -193,6 +236,7 @@
 		73CFA1451C534CBB00E8B1FF /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				27BF0C591C59C8A300D26817 /* backgroundmodes */,
 				73CFA1521C534F3700E8B1FF /* focus */,
 				7351C7C51C53D6150001C42E /* siriremote */,
 				73CFA14E1C534EBD00E8B1FF /* top */,
@@ -214,6 +258,7 @@
 				73CFA14A1C534D2700E8B1FF /* Main.storyboard */,
 				73CFA1551C53524D00E8B1FF /* Focus.storyboard */,
 				7351C7C81C53D76C0001C42E /* SiriRemote.storyboard */,
+				27BF0C5C1C59C92A00D26817 /* BackgroundModes.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -257,8 +302,8 @@
 		73EB13F71C559FC900D29367 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				73EB13F81C559FC900D29367 /* blue.jpg */,
-				73EB13F91C559FC900D29367 /* red.jpg */,
+				27BF0C631C59CB1500D26817 /* backgroundmodes */,
+				27BF0C621C59CB0500D26817 /* topshelf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -332,6 +377,15 @@
 				TargetAttributes = {
 					73CFA10B1C52793100E8B1FF = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5GKRYZ5VBH;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.appletvos = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					73CFA11C1C52793100E8B1FF = {
 						CreatedOnToolsVersion = 7.2;
@@ -368,11 +422,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CFA1561C53524D00E8B1FF /* Focus.storyboard in Resources */,
-				73EB13FA1C559FC900D29367 /* blue.jpg in Resources */,
+				27BF0C691C59CB4C00D26817 /* SampleAudio.mp3 in Resources */,
 				73CFA14B1C534D2700E8B1FF /* Main.storyboard in Resources */,
-				73EB13FB1C559FC900D29367 /* red.jpg in Resources */,
 				73CFA1171C52793100E8B1FF /* Assets.xcassets in Resources */,
 				7351C7C91C53D76C0001C42E /* SiriRemote.storyboard in Resources */,
+				27BF0C671C59CB2600D26817 /* red.jpg in Resources */,
+				27BF0C5D1C59C92A00D26817 /* BackgroundModes.storyboard in Resources */,
+				27BF0C661C59CB2600D26817 /* blue.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +443,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73EB13FC1C559FD900D29367 /* blue.jpg in Resources */,
-				73EB13FD1C559FDB00D29367 /* red.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,15 +453,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BF0C611C59C97000D26817 /* BackgroundModesAudioViewController.swift in Sources */,
 				73CFA1541C534F5000E8B1FF /* FocusMenuViewController.swift in Sources */,
 				73A977A71C545F8400E23C48 /* SiriRemoteDPadViewController.swift in Sources */,
 				73CFA1501C534ECD00E8B1FF /* TopViewController.swift in Sources */,
 				73A977AB1C5482BB00E23C48 /* SiriRemotePressViewController.swift in Sources */,
+				27BF0C6D1C59CF7900D26817 /* Player.swift in Sources */,
 				73A977A41C5451DF00E23C48 /* SiriRemoteMotionViewController.swift in Sources */,
 				73CFA1481C534CE300E8B1FF /* AppDelegate.swift in Sources */,
 				73CFA15A1C535A0100E8B1FF /* FocusGuideViewController.swift in Sources */,
 				73CFA15C1C535A1800E8B1FF /* NotFocusableViewController.swift in Sources */,
 				7351C7C71C53D6210001C42E /* SiriRemoteMenuViewController.swift in Sources */,
+				27BF0C5F1C59C95F00D26817 /* BackgroundModesMenuViewController.swift in Sources */,
 				73CFA1581C5359E200E8B1FF /* FocusableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,11 +587,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "tvOS-Sampler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerd0geek1.tvOS-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
@@ -544,11 +604,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "tvOS-Sampler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerd0geek1.tvOS-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
@@ -636,6 +699,7 @@
 				73EB13EF1C558A7B00D29367 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
